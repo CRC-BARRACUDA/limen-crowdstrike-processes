@@ -1,0 +1,87 @@
+# English strings for the module's own screens.
+#
+# The default language: anything missing from another catalog falls back here,
+# and anything missing here renders as its own key — visible enough to notice.
+#
+# `[module]` is different: the *host* reads it for the card and the tab, and
+# English falls back to limen.toml — which is why it is in uk.toml and not here.
+
+[ui]
+title = "Fleet processes"
+subtitle = "What is running on each host, read over RTR — command line, owner, parent and start time."
+fetch_hosts = "Fetch hosts"
+scan_selected = "Scan Selected"
+scan_all = "Scan All"
+stop = "Stop"
+search = "Search"
+search_hint = "name, command line, owner, path…"
+filter = "Filter"
+reachable = "Reachable hosts ({n}) — tick the ones to scan"
+no_reachable = "No reachable hosts. RTR needs the host online."
+scanned = "Scanned ({n}) — double-click a host to open its processes"
+open_host = "Open processes"
+not_scanned = "Not scanned ({n})"
+col_host = "Host"
+col_why = "Why"
+shown_of = "{shown} of {total} shown"
+no_match = "Nothing matches that search."
+
+[state]
+queued = "waiting"
+scanning = "scanning…"
+done = "done"
+failed = "failed"
+stopped = "stopped"
+skipped = "OS not supported"
+failed_why = "failed — {why}"
+
+[status]
+reachable = "{n} reachable host(s)"
+fetch_failed = "fetch failed: {err}"
+none_selected = "no hosts selected — tick at least one"
+already_running = "a scan is already running"
+starting = "scanning {n} host(s)…"
+progress = "scanning — {done} of {total} done, {items} process(es) so far"
+scanned = "{n} host(s) scanned"
+items = "{n} process(es)"
+failed = "{n} failed"
+stopped = "{n} stopped"
+unsupported = "{n} unsupported"
+stopping = "stopping — hosts already in flight will finish"
+
+[host]
+unknown = "That host is not in the last scan."
+summary = "{n} process(es)"
+nothing = "No processes reported."
+
+[col]
+process = "Process"
+pid = "PID"
+parent = "Parent"
+owner = "Owner"
+started = "Started"
+cmd = "Command line"
+
+[proc]
+about = "About process"
+gone = "That process is no longer in the last scan."
+window = "Process"
+unnamed = "(unnamed)"
+pid = "pid {n}"
+host = "Host"
+owner = "Owner"
+parent = "Parent"
+started = "Started"
+image = "Image"
+cmd = "Command line"
+falcon_id = "Falcon host id"
+
+[ui2]
+col_procs = "Processes"
+col_owners = "Owners"
+col_withcmd = "With a command line"
+
+[note]
+truncated = "more than {n} processes — list cut short"
+empty = "the host reported no processes"
+no_owners = "too many processes to look up owners — the Owner column is blank here, not empty"
