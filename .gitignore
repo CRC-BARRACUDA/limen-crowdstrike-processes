@@ -2,3 +2,5 @@ __pycache__/
 *.pyc
 # Local Falcon credentials live in the crowdstrike module, never here.
 config.json
+# Release signatures, made by scripts/sign-module.sh — uploaded, never committed.
+/dist
