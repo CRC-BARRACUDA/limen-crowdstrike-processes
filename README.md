@@ -76,6 +76,20 @@ processes {"user": "SYSTEM"}     -> by owner
 The `cmd` lookup is the one worth having: it is how a single indicator is checked
 against the whole fleet at once.
 
+## Reports
+
+With a report provider installed — the
+[`report`](https://github.com/CRC-BARRACUDA/limen-report) module — a **Make
+Report** button appears: on the fleet screen
+for the last scan, with a line per host that was read — how many processes,
+owners, and how many with a command line — and a list of the hosts that were
+not; and in a host's tab for that host alone, every process its tab shows,
+filter included.
+
+The button opens the provider's preview. What the document is, the ground it is
+printed on and whether it is signed with your OpenPGP key are chosen there. A
+host's report is filed under the host's name.
+
 ## Licence
 
 GPL-3.0-or-later.
