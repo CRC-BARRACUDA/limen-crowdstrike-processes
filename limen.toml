@@ -1,7 +1,7 @@
 [module]
 name = "crowdstrike-processes"
 display_name = "Fleet processes"
-version = "0.1.0"
+version = "0.2.0"
 language = "python"
 entry = "main.py"
 description = "List the running processes on CrowdStrike fleet hosts over RTR — command line, owner, parent and start time, per host."
